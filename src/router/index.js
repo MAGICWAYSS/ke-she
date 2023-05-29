@@ -13,6 +13,17 @@ import Search from "../views/Search";
 import history from "../views/History";
 import Pay from "../views/Pay";
 import AddProduct from "../views/AddProduct";
+/** 后台管理系统路由 */
+import Home from '@/views/pages/Home.vue'
+import BookInfo from '@/views/pages/BookInfo.vue'
+import BookManager from '@/views/pages/BookManager.vue'
+import BookCategory from '@/views/pages/BookCategory.vue'
+import SystemManager from '@/views/pages/SystemManager.vue'
+import SystenNotice from '@/views/pages/SystenNotice.vue'
+import Main from '@/views/pages/Main.vue'
+import ReaderManager from '@/views/pages/ReaderManager.vue'
+import ReaderInfo from '@/views/pages/ReaderInfo.vue'
+import ReaderBorrow from '@/views/pages/ReaderBorrow.vue'
 //获取原型对象上的push函数
 /*const originalPush = VueRouter.prototype.push
 //修改原型对象中的push方法
@@ -97,7 +108,61 @@ const routes = [
     path: '/addProduct',
     name:'AddProduct',
     component: AddProduct
-  }
+  },
+  /** 用户路由 */
+  {
+    path:'/',
+    name:'main',
+    redirect:'/home',
+    component:Main,
+    children:[
+        {
+            path:'home',
+            name:'home',
+            component:Home
+        },
+        {
+            path:'bookManager',
+            name:'bookManager',
+            component:BookManager
+        },
+        {
+            path:'bookInfo',
+            name:'bookInfo',
+            component:BookInfo
+        },
+        {
+            path:'bookCategory',
+            name:'bookCategory',
+            component:BookCategory
+        },
+        {
+            path:'systemManager',
+            name:'systemManager',
+            component:SystemManager
+        },
+        {
+            path:'systenNotice',
+            name:'systenNotice',
+            component:SystenNotice
+        },
+        {
+            path:'/readerManager',
+            name:'readerManager',
+            component:ReaderManager
+        },
+        {
+            path:'/readerInfo',
+            name:'readerInfo',
+            component:ReaderInfo
+        },
+        {
+            path:'/readerBorrow',
+            name:'readerBorrow',
+            component:ReaderBorrow
+        },
+    ]
+    }
 ]
 
 const router = new VueRouter({
