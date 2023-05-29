@@ -1,0 +1,16 @@
+{
+  "id": "3775594",
+  "name": "book",
+  "font_family": "element-icons",
+  "css_prefix_text": "el-icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17575461",
+      "name": "book",
+      "font_class": "book",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
