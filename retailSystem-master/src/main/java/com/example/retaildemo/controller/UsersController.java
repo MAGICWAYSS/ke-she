@@ -36,17 +36,22 @@ import java.util.List;
 public class UsersController {
     @Autowired
     UsersService usersService;
-    @GetMapping("/one/{id}")
+    @GetMapping("/userById")
     @ApiOperation("通过ID查询用户信息")
-    public Users select(@PathVariable("id") String id){
-        return this.usersService.findByName(id);
+    public List<Users> getListById(@RequestParam Integer id){
+        return usersService.getListById(id);
+    }
+    @GetMapping("/userByName")
+    @ApiOperation("通过名字查询用户信息")
+    public List<Users> getListByName(@RequestParam String name){
+        return usersService.getListByName(name);
     }
     @PostMapping
     public boolean save(@RequestBody Users users){
         return usersService.saveOrUpdate(users);
     }
     // 查询所有数据
-    @GetMapping
+    @GetMapping("/findAll")
     public List<Users> findAll() {
         return usersService.list();
     }
