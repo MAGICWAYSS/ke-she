@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>查看图片 - 淘宝网 </title>
+<link rel="shortcut icon" href="http://www.taobao.com">
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta name="description" content="淘宝网图片浏览器">
+<meta name="keywords" content="淘宝,图片,照片,浏览,显示,软件">
+</head>
+<script type="text/javascript">
+function resize() {
+	try {
+		var aw = screen.availWidth;
+		var ah = screen.availHeight;
+		window.moveTo(0, 0);
+		window.resizeTo(aw, ah);
+	}catch(e) {}
+}
+function cls() {
+	if (document.all) {
+		window.opener='abc';
+	}
+	window.close();
+	return false;
+}
+</script>
+<body onclick="cls();" style="cursor:hand;margin:0;padding:0"><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=dde5cb9016297785500878520e&asid=AQAAAAB2ciRhFl1VXAAAAABTjwTzdPNf9g==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAAB2ciRhUk7qDAAAAACqffaP/5f/ZQ==&sidx=d4YIWWnqRVru3lg/F6WhwZi0ZHDrx55aVKmO+qA6uOAuot+4R6Yn6PhZ87dYC0x+dfQwBywLFhIRSufIGJtgDUjP2dtiNU3GV8s3Rul3ql8IMHg53OBnL+DUFxb2ecd5Pen5JFNNz0Ba+r7Vt8OLxUQ7uowZ+ll+VYOguhvRLEo=",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<table border="0" align="center">
+<tr><td>
+宝贝名称：<strong></strong>
+</td>
+<td align="right"><span style="font-size:12px">单击鼠标关闭窗口</span></td>
+<tr><td colspan="2">
+<hr height="1" size="1">
+<a href="#"><img src="/bao/uploaded/" border="0" onClick="cls()" alt="单击鼠标关闭窗口"></a>
+</td></tr>
+</table>
+</body>
+</html>
+

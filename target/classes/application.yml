@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/keshe3?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: heqishengcai
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size:
+        100MB
+      max-request-size:
+        1000MB
+mybatis-plus:
+  mapper-locations: classpath:com/example/retaildemo/mapper/xml/*.xml
+server:
+  port: 9090
+files:
+  upload:
+    path: E:\home
